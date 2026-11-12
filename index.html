@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>Daksh Patil — AI Engineer</title>
+<title>Daksh Patil — AI / ML Engineer</title>
 <meta name="description" content="Daksh Patil — AI engineer and final-year B.Tech AI student at NMIMS MPSTME. Self-Driving Labs, multi-agent battery charging (INDICON 2026), pan-cancer genomics (IEEE ICBCB 2026), and embedded firmware.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Daksh Patil — AI Engineer">
+<meta property="og:title" content="Daksh Patil — AI / ML Engineer">
 <meta property="og:description" content="Self-Driving Labs, multi-agent battery charging (INDICON 2026), pan-cancer genomics (IEEE ICBCB 2026), and embedded firmware.">
 <meta name="twitter:card" content="summary">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
@@ -131,6 +131,7 @@ body.H #cring{width:54px;height:54px;border-color:rgba(0,255,170,.8);}
 }
 #heroC{position:absolute;inset:0;z-index:0;width:100%;height:100%;display:block;}
 #BURGER{display:none;}
+#MMENU{display:none;}
 /* grid overlay */
 .hero-grid{
   position:absolute;inset:0;z-index:1;pointer-events:none;
@@ -307,6 +308,8 @@ body.H #cring{width:54px;height:54px;border-color:rgba(0,255,170,.8);}
 .section.revealed .proj-row:nth-child(7){transition-delay:.78s;}
 .section.revealed .proj-row:nth-child(8){transition-delay:.86s;}
 .section.revealed .proj-row:nth-child(9){transition-delay:.94s;}
+.section.revealed .proj-row:nth-child(10){transition-delay:1.02s;}
+.section.revealed .proj-row:nth-child(11){transition-delay:1.1s;}
 .proj-row::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,255,170,.013),transparent);opacity:0;transition:opacity .4s;pointer-events:none;}
 .proj-row:hover::before{opacity:1;}
 .pnum{font-size:.52rem;letter-spacing:.2em;color:var(--mute);}
@@ -466,6 +469,7 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
   #BURGER.open span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg);}
   /* mobile menu overlay */
   #MMENU{
+    display:flex;
     position:fixed;inset:0;background:rgba(6,6,10,.97);z-index:490;
     display:flex;flex-direction:column;align-items:center;justify-content:center;gap:40px;
     clip-path:inset(0 0 100% 0);transition:clip-path .7s cubic-bezier(.76,0,.24,1);
@@ -567,7 +571,7 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
   <div class="ld-words">
     <span>DAKSH</span><span>PATIL</span><span>.</span>
   </div>
-  <div class="ld-sub">AI Engineer &nbsp;·&nbsp; NMIMS MPSTME &nbsp;·&nbsp; Class of 2027</div>
+  <div class="ld-sub">AI / ML Engineer &nbsp;·&nbsp; NMIMS MPSTME &nbsp;·&nbsp; Class of 2027</div>
   <div class="ld-bar-wrap">
     <div class="ld-nums">
       <span class="ld-status" id="lstatus">Initializing</span>
@@ -610,7 +614,7 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
   <div class="hero-grid"></div>
   <div class="hero-body">
     <div class="eyebrow" id="eyebrow">
-      AI Engineer &nbsp;·&nbsp; Self-Driving Labs &nbsp;·&nbsp; Embedded Systems
+      AI / ML Engineer
     </div>
     <h1 class="hero-title">
       <span class="line"><span class="word" id="hw1">DAKSH</span></span>
@@ -620,7 +624,7 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     <div class="hero-meta" id="hmeta">
       <div>
         <div class="hml">Now</div>
-        <div class="hmv">Firmware Intern at Meshnet Electronics &nbsp;·&nbsp; Building a Self-Driving Lab for concrete</div>
+        <div class="hmv">Firmware Intern at Meshnet Electronics &nbsp;·&nbsp; STM32 firmware for mmWave radar</div>
       </div>
       <div>
         <div class="hml">Research</div>
@@ -657,9 +661,10 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
   <div class="about-grid">
     <div class="about-copy">
       <p class="about-body">
-        I'm <strong>Daksh Patil</strong>, a final-year AI engineering student who builds systems where the data is messy and the stakes are real — from cancer genomics to battery health to concrete that has to meet code.<br><br>
-        My pan-cancer classification paper was published at <strong>IEEE ICBCB 2026</strong> and presented in Kitakyushu, Japan. My uncertainty-aware multi-agent battery charging work has been accepted at <strong>INDICON 2026</strong>. Right now I'm building a <strong>Self-Driving Lab</strong> for concrete mix design as my capstone.<br><br>
-        I've done industrial training at <strong>L&amp;T Precision Engineering &amp; Systems</strong> on ballistics simulation, and I'm currently a <strong>Firmware Intern at Meshnet Electronics</strong>, writing STM32 firmware for an mmWave radar product. I care about work that ships, not just work that theorises.
+        I'm <strong>Daksh</strong> — an AI/ML engineer in my final year at NMIMS MPSTME. I like problems where the data is messy, the stakes are real, and a wrong answer costs something.<br><br>
+        <strong>Research.</strong> My pan-cancer classification paper is published at <strong>IEEE ICBCB 2026</strong> (presented in Kitakyushu, Japan). My uncertainty-aware multi-agent battery charging work is accepted at <strong>INDICON 2026</strong>.<br><br>
+        <strong>Recent builds.</strong> I completed a <strong>Self-Driving Lab</strong> for concrete mix design as my capstone — Bayesian optimisation on top of a code-checked engineering engine. I've also built multimodal media AI (MediaLens) and ballistics simulation at <strong>L&amp;T</strong>. Today I write STM32 firmware as a <strong>Firmware Intern at Meshnet Electronics</strong>.<br><br>
+        <strong>How I work.</strong> Every pipeline step gets a check. Every metric has to be explainable. Then I try to break what I built, and rebuild it stronger. My daily stack: Python, PyTorch, scikit-learn, LightGBM, BoTorch/Ax, LangGraph, FAISS, C/C++ — with AI coding tools like Claude Code to move faster.
       </p>
       <div class="stats-row">
         <div class="stat"><div class="stat-n">2</div><div class="stat-l">Conference Papers</div></div>
@@ -704,42 +709,40 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     <span class="proj-counter">08 Featured</span>
   </div>
 
-  <!-- 1: SDL -->
+  <!-- 1: Cancer -->
   <div class="proj-row">
     <div class="pnum">01</div>
     <div class="proj-info">
-      <div class="pname">Self-Driving Lab for Concrete Mix Design</div>
-      <div class="cbadge nb">◆ Final-Year Capstone · In Progress</div>
-      <div class="proj-desc">An AI lab assistant that designs IS-code-compliant concrete mixes (M10–M65) using manufactured sand. A tested IS 10262 engine does every calculation; LightGBM and a Gaussian Process predict strength and workability with uncertainty; a qNEHVI Bayesian optimiser ranks mixes on strength, workability and cost. Durability is a hard gate, and every number traces back to an IS clause.</div>
-      <div class="ptags"><span class="ptag">Bayesian Optimisation</span><span class="ptag">BoTorch / Ax</span><span class="ptag">LightGBM</span><span class="ptag">Gaussian Process</span><span class="ptag">IS 10262</span></div>
+      <div class="pname">Cancer Detection &amp; Classification</div>
+      <div class="cbadge">★ IEEE ICBCB 2026 — Published · Presented in Kitakyushu, Japan</div>
+      <div class="proj-desc">Pan-cancer classification across 33 cancer types using 10,459 patient samples. Genetic Algorithms prune 200,000+ features; TabNet and SAINT attention models achieve 98.76% binary and 95.60% multiclass accuracy with gradient-based biomarker identification.</div>
+      <div class="ptags"><span class="ptag">Attention</span><span class="ptag">Deep Learning</span><span class="ptag">Genetic Algorithm</span><span class="ptag">ML</span><span class="ptag">Jupyter</span></div>
     </div>
     <div class="panim">
       <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
-        <line x1="120" y1="84" x2="290" y2="84" stroke="rgba(238,234,226,.12)" stroke-width=".7"/>
-        <line x1="120" y1="84" x2="120" y2="8" stroke="rgba(238,234,226,.12)" stroke-width=".7"/>
-        <text x="296" y="86" font-size="4.5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">COST ↓</text>
-        <text x="96" y="12" font-size="4.5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">fck ↑</text>
-        <path d="M134,18 Q170,22 200,36 Q236,54 278,76" fill="none" stroke="rgba(79,195,247,.35)" stroke-width=".9" stroke-dasharray="3 3"/>
-        <g fill="rgba(238,234,226,.14)">
-          <circle cx="160" cy="48" r="1.6"/><circle cx="182" cy="62" r="1.6"/><circle cx="214" cy="70" r="1.6"/><circle cx="150" cy="66" r="1.6"/>
-          <circle cx="240" cy="78" r="1.6"/><circle cx="198" cy="52" r="1.6"/><circle cx="172" cy="40" r="1.6"/><circle cx="230" cy="62" r="1.6"/>
+        <defs>
+          <clipPath id="cc1"><rect width="390" height="94"/></clipPath>
+          <linearGradient id="cfade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22222e"/><stop offset=".1" stop-color="transparent"/><stop offset=".9" stop-color="transparent"/><stop offset="1" stop-color="#22222e"/></linearGradient>
+        </defs>
+        <g clip-path="url(#cc1)">
+          <text y="16" font-size="6" font-family="monospace" fill="rgba(238,234,226,.16)" style="animation:dnas 3.5s linear infinite">ATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCT</text>
+          <text y="27" font-size="6" font-family="monospace" fill="rgba(238,234,226,.12)" style="animation:dnas 5s linear infinite reverse">GCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
+          <text y="38" font-size="6" font-family="monospace" fill="rgba(238,234,226,.09)" style="animation:dnas 4s linear infinite">TTAGCGATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
+          <rect x="145" y="30" width="100" height="13" rx="1" style="animation:hlseq 2s ease-in-out infinite"/>
+          <text x="149" y="40" font-size="6" font-family="monospace" fill="rgba(255,100,100,.92)" style="animation:dnas 4s linear infinite">TTAGCGATCGGCTAGCTAT</text>
+          <text y="50" font-size="6" font-family="monospace" fill="rgba(238,234,226,.08)" style="animation:dnas 5.5s linear infinite reverse">CGATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAG</text>
+          <text y="62" font-size="6" font-family="monospace" fill="rgba(238,234,226,.06)" style="animation:dnas 3s linear infinite">AGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCT</text>
+          <text y="74" font-size="6" font-family="monospace" fill="rgba(238,234,226,.04)" style="animation:dnas 6s linear infinite reverse">GCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
+          <text y="86" font-size="6" font-family="monospace" fill="rgba(238,234,226,.03)" style="animation:dnas 4.5s linear infinite">CGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTAT</text>
         </g>
-        <g fill="#4fc3f7">
-          <circle cx="134" cy="18" r="2.4" style="animation:bp 2s ease-in-out infinite"/>
-          <circle cx="168" cy="25" r="2.4" style="animation:bp 2s .3s ease-in-out infinite"/>
-          <circle cx="200" cy="36" r="2.4" style="animation:bp 2s .6s ease-in-out infinite"/>
-          <circle cx="238" cy="55" r="2.4" style="animation:bp 2s .9s ease-in-out infinite"/>
-          <circle cx="278" cy="76" r="2.4" style="animation:bp 2s 1.2s ease-in-out infinite"/>
-        </g>
-        <circle cx="200" cy="36" r="4" fill="none" stroke="#4fc3f7" stroke-width=".8" style="animation:rpo 2.4s ease-out infinite"/>
-        <text x="10" y="40" font-size="5.5" fill="#4fc3f7" font-family="DM Sans,sans-serif" letter-spacing="2">qNEHVI</text>
-        <text x="10" y="52" font-size="5" fill="rgba(79,195,247,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">PARETO FRONT</text>
-        <text x="312" y="34" font-size="5" fill="rgba(0,255,170,.55)" font-family="DM Sans,sans-serif" letter-spacing="1">IS GATE ✓</text>
-        <text x="312" y="46" font-size="5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">5 DESIGNS</text>
-        <text x="312" y="58" font-size="5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">3 TRIALS</text>
+        <rect width="390" height="94" fill="url(#cfade)"/>
+        <rect x="0" y="0" width="390" height="1.5" fill="rgba(255,51,85,.1)" style="animation:sch 2.5s linear infinite"/>
+        <text x="10" y="48" font-size="6" fill="#ff3355" font-family="DM Sans,sans-serif" letter-spacing="2">MUTATION</text>
+        <text x="10" y="60" font-size="5.5" fill="rgba(255,51,85,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">DETECTED</text>
+        <text x="328" y="46" font-size="5.5" fill="rgba(238,234,226,.28)" font-family="DM Sans,sans-serif">94.7%</text>
       </svg>
     </div>
-    <div class="plinks"></div>
+    <div class="plinks"><a href="https://github.com/GeekDaksh/Cancer-Detection-and-Classification-using-Deep-Learning-and-Genetic-Algorithm" target="_blank" class="plink">GitHub →</a></div>
   </div>
 
   <!-- 2: BMS -->
@@ -779,45 +782,74 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     </div>
   </div>
 
-  <!-- 3: Cancer -->
+  <!-- 3: SDL -->
   <div class="proj-row">
     <div class="pnum">03</div>
     <div class="proj-info">
-      <div class="pname">Cancer Detection &amp; Classification</div>
-      <div class="cbadge">★ IEEE ICBCB 2026 — Published · Presented in Kitakyushu, Japan</div>
-      <div class="proj-desc">Pan-cancer classification across 33 cancer types using 10,459 patient samples. Genetic Algorithms prune 200,000+ features; TabNet and SAINT attention models achieve 98.76% binary and 95.60% multiclass accuracy with gradient-based biomarker identification.</div>
-      <div class="ptags"><span class="ptag">Attention</span><span class="ptag">Deep Learning</span><span class="ptag">Genetic Algorithm</span><span class="ptag">ML</span><span class="ptag">Jupyter</span></div>
+      <div class="pname">Self-Driving Lab for Concrete Mix Design</div>
+      <div class="cbadge nb">◆ Final-Year Capstone · Completed</div>
+      <div class="proj-desc">An AI lab assistant that designs IS-code-compliant concrete mixes (M10–M65) using manufactured sand. A tested IS 10262 engine does every calculation; LightGBM and a Gaussian Process predict strength and workability with uncertainty; a qNEHVI Bayesian optimiser ranks mixes on strength, workability and cost. Durability is a hard gate, and every number traces back to an IS clause.</div>
+      <div class="ptags"><span class="ptag">Bayesian Optimisation</span><span class="ptag">BoTorch / Ax</span><span class="ptag">LightGBM</span><span class="ptag">Gaussian Process</span><span class="ptag">IS 10262</span></div>
     </div>
     <div class="panim">
       <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
-        <defs>
-          <clipPath id="cc1"><rect width="390" height="94"/></clipPath>
-          <linearGradient id="cfade" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22222e"/><stop offset=".1" stop-color="transparent"/><stop offset=".9" stop-color="transparent"/><stop offset="1" stop-color="#22222e"/></linearGradient>
-        </defs>
-        <g clip-path="url(#cc1)">
-          <text y="16" font-size="6" font-family="monospace" fill="rgba(238,234,226,.16)" style="animation:dnas 3.5s linear infinite">ATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCT</text>
-          <text y="27" font-size="6" font-family="monospace" fill="rgba(238,234,226,.12)" style="animation:dnas 5s linear infinite reverse">GCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
-          <text y="38" font-size="6" font-family="monospace" fill="rgba(238,234,226,.09)" style="animation:dnas 4s linear infinite">TTAGCGATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
-          <rect x="145" y="30" width="100" height="13" rx="1" style="animation:hlseq 2s ease-in-out infinite"/>
-          <text x="149" y="40" font-size="6" font-family="monospace" fill="rgba(255,100,100,.92)" style="animation:dnas 4s linear infinite">TTAGCGATCGGCTAGCTAT</text>
-          <text y="50" font-size="6" font-family="monospace" fill="rgba(238,234,226,.08)" style="animation:dnas 5.5s linear infinite reverse">CGATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAG</text>
-          <text y="62" font-size="6" font-family="monospace" fill="rgba(238,234,226,.06)" style="animation:dnas 3s linear infinite">AGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCT</text>
-          <text y="74" font-size="6" font-family="monospace" fill="rgba(238,234,226,.04)" style="animation:dnas 6s linear infinite reverse">GCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGG</text>
-          <text y="86" font-size="6" font-family="monospace" fill="rgba(238,234,226,.03)" style="animation:dnas 4.5s linear infinite">CGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTATCGGCTAGCTAT</text>
+        <line x1="120" y1="84" x2="290" y2="84" stroke="rgba(238,234,226,.12)" stroke-width=".7"/>
+        <line x1="120" y1="84" x2="120" y2="8" stroke="rgba(238,234,226,.12)" stroke-width=".7"/>
+        <text x="296" y="86" font-size="4.5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">COST ↓</text>
+        <text x="96" y="12" font-size="4.5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">fck ↑</text>
+        <path d="M134,18 Q170,22 200,36 Q236,54 278,76" fill="none" stroke="rgba(79,195,247,.35)" stroke-width=".9" stroke-dasharray="3 3"/>
+        <g fill="rgba(238,234,226,.14)">
+          <circle cx="160" cy="48" r="1.6"/><circle cx="182" cy="62" r="1.6"/><circle cx="214" cy="70" r="1.6"/><circle cx="150" cy="66" r="1.6"/>
+          <circle cx="240" cy="78" r="1.6"/><circle cx="198" cy="52" r="1.6"/><circle cx="172" cy="40" r="1.6"/><circle cx="230" cy="62" r="1.6"/>
         </g>
-        <rect width="390" height="94" fill="url(#cfade)"/>
-        <rect x="0" y="0" width="390" height="1.5" fill="rgba(255,51,85,.1)" style="animation:sch 2.5s linear infinite"/>
-        <text x="10" y="48" font-size="6" fill="#ff3355" font-family="DM Sans,sans-serif" letter-spacing="2">MUTATION</text>
-        <text x="10" y="60" font-size="5.5" fill="rgba(255,51,85,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">DETECTED</text>
-        <text x="328" y="46" font-size="5.5" fill="rgba(238,234,226,.28)" font-family="DM Sans,sans-serif">94.7%</text>
+        <g fill="#4fc3f7">
+          <circle cx="134" cy="18" r="2.4" style="animation:bp 2s ease-in-out infinite"/>
+          <circle cx="168" cy="25" r="2.4" style="animation:bp 2s .3s ease-in-out infinite"/>
+          <circle cx="200" cy="36" r="2.4" style="animation:bp 2s .6s ease-in-out infinite"/>
+          <circle cx="238" cy="55" r="2.4" style="animation:bp 2s .9s ease-in-out infinite"/>
+          <circle cx="278" cy="76" r="2.4" style="animation:bp 2s 1.2s ease-in-out infinite"/>
+        </g>
+        <circle cx="200" cy="36" r="4" fill="none" stroke="#4fc3f7" stroke-width=".8" style="animation:rpo 2.4s ease-out infinite"/>
+        <text x="10" y="40" font-size="5.5" fill="#4fc3f7" font-family="DM Sans,sans-serif" letter-spacing="2">qNEHVI</text>
+        <text x="10" y="52" font-size="5" fill="rgba(79,195,247,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">PARETO FRONT</text>
+        <text x="312" y="34" font-size="5" fill="rgba(0,255,170,.55)" font-family="DM Sans,sans-serif" letter-spacing="1">IS GATE ✓</text>
+        <text x="312" y="46" font-size="5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">5 DESIGNS</text>
+        <text x="312" y="58" font-size="5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">3 TRIALS</text>
       </svg>
     </div>
-    <div class="plinks"><a href="https://github.com/GeekDaksh/Cancer-Detection-and-Classification-using-Deep-Learning-and-Genetic-Algorithm" target="_blank" class="plink">GitHub →</a></div>
+    <div class="plinks"></div>
   </div>
 
-  <!-- 4: MediaLens -->
+  <!-- 4: ARCS -->
   <div class="proj-row">
     <div class="pnum">04</div>
+    <div class="proj-info">
+      <div class="pname">ARCS — Ballistics Fire-Control Simulation</div>
+      <div class="cbadge nb">◆ Industrial Training · L&amp;T Precision Engineering &amp; Systems</div>
+      <div class="proj-desc">Trajectory simulation for a fire-control system using the STANAG 4355 Modified Point Mass model with RK4 integration. Kalman-filter estimation and a Newton / Gauss-Newton correction step tune the solution, with a 3D trajectory visualiser to inspect each shot.</div>
+      <div class="ptags"><span class="ptag">STANAG 4355</span><span class="ptag">RK4</span><span class="ptag">Kalman Filter</span><span class="ptag">Gauss-Newton</span><span class="ptag">Python</span></div>
+    </div>
+    <div class="panim">
+      <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
+        <line x1="20" y1="84" x2="370" y2="84" stroke="rgba(238,234,226,.1)" stroke-width=".7"/>
+        <path id="arcp" d="M40,84 Q190,-30 340,84" fill="none" stroke="rgba(255,179,71,.3)" stroke-width=".9" stroke-dasharray="2 3"/>
+        <path d="M40,84 Q186,-22 330,84" fill="none" stroke="rgba(238,234,226,.1)" stroke-width=".6"/>
+        <circle r="2.6" fill="#ffb347"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#arcp"/></animateMotion></circle>
+        <g transform="translate(340,84)">
+          <circle r="4" fill="none" stroke="rgba(255,179,71,.7)" stroke-width="1" style="animation:rpo 3s ease-out infinite"/>
+          <line x1="-6" y1="0" x2="6" y2="0" stroke="rgba(255,179,71,.6)" stroke-width=".8"/>
+        </g>
+        <text x="10" y="18" font-size="5.5" fill="#ffb347" font-family="DM Sans,sans-serif" letter-spacing="2">MPM · RK4</text>
+        <text x="10" y="30" font-size="5" fill="rgba(255,179,71,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">KALMAN EST.</text>
+        <text x="300" y="18" font-size="5" fill="rgba(238,234,226,.24)" font-family="DM Sans,sans-serif" letter-spacing="1">TRAJECTORY</text>
+      </svg>
+    </div>
+    <div class="plinks"><a href="https://github.com/GeekDaksh/ARCS---The-Final" target="_blank" class="plink">GitHub →</a></div>
+  </div>
+
+  <!-- 5: MediaLens -->
+  <div class="proj-row">
+    <div class="pnum">05</div>
     <div class="proj-info">
       <div class="pname">MediaLens — Multimodal Media AI</div>
       <div class="proj-desc">Three tools for video and TV content. Emotion-aware scene search finds moments by what is said and how it feels (MELD). SafeCut detects slurs and profanity in clips and bleeps, blurs or cuts them for clean highlights. A cost-aware multimodal sarcasm detector combines text, audio and video only when needed (MUStARD).</div>
@@ -845,66 +877,9 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     <div class="plinks"></div>
   </div>
 
-  <!-- 5: ARCS -->
-  <div class="proj-row">
-    <div class="pnum">05</div>
-    <div class="proj-info">
-      <div class="pname">ARCS — Ballistics Fire-Control Simulation</div>
-      <div class="cbadge nb">◆ Industrial Training · L&amp;T Precision Engineering &amp; Systems</div>
-      <div class="proj-desc">Trajectory simulation for a fire-control system using the STANAG 4355 Modified Point Mass model with RK4 integration. Kalman-filter estimation and a Newton / Gauss-Newton correction step tune the solution, with a 3D trajectory visualiser to inspect each shot.</div>
-      <div class="ptags"><span class="ptag">STANAG 4355</span><span class="ptag">RK4</span><span class="ptag">Kalman Filter</span><span class="ptag">Gauss-Newton</span><span class="ptag">Python</span></div>
-    </div>
-    <div class="panim">
-      <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
-        <line x1="20" y1="84" x2="370" y2="84" stroke="rgba(238,234,226,.1)" stroke-width=".7"/>
-        <path id="arcp" d="M40,84 Q190,-30 340,84" fill="none" stroke="rgba(255,179,71,.3)" stroke-width=".9" stroke-dasharray="2 3"/>
-        <path d="M40,84 Q186,-22 330,84" fill="none" stroke="rgba(238,234,226,.1)" stroke-width=".6"/>
-        <circle r="2.6" fill="#ffb347"><animateMotion dur="3s" repeatCount="indefinite"><mpath href="#arcp"/></animateMotion></circle>
-        <g transform="translate(340,84)">
-          <circle r="4" fill="none" stroke="rgba(255,179,71,.7)" stroke-width="1" style="animation:rpo 3s ease-out infinite"/>
-          <line x1="-6" y1="0" x2="6" y2="0" stroke="rgba(255,179,71,.6)" stroke-width=".8"/>
-        </g>
-        <text x="10" y="18" font-size="5.5" fill="#ffb347" font-family="DM Sans,sans-serif" letter-spacing="2">MPM · RK4</text>
-        <text x="10" y="30" font-size="5" fill="rgba(255,179,71,.4)" font-family="DM Sans,sans-serif" letter-spacing="1">KALMAN EST.</text>
-        <text x="300" y="18" font-size="5" fill="rgba(238,234,226,.24)" font-family="DM Sans,sans-serif" letter-spacing="1">TRAJECTORY</text>
-      </svg>
-    </div>
-    <div class="plinks"><a href="https://github.com/GeekDaksh/ARCS---The-Final" target="_blank" class="plink">GitHub →</a></div>
-  </div>
-
-  <!-- 6: CollectIQ -->
+  <!-- 6: Crop Disease -->
   <div class="proj-row">
     <div class="pnum">06</div>
-    <div class="proj-info">
-      <div class="pname">CollectIQ — Call Intelligence</div>
-      <div class="cbadge nb">◆ In Progress</div>
-      <div class="proj-desc">A pipeline for debt-collection calls. It pulls key entities out of each call transcript and checks the conversation against compliance rules, so risky calls get flagged. Built and tested on synthetic calls.</div>
-      <div class="ptags"><span class="ptag">NLP</span><span class="ptag">Entity Extraction</span><span class="ptag">Compliance Checks</span><span class="ptag">Python</span></div>
-    </div>
-    <div class="panim">
-      <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
-        <text x="14" y="20" font-size="6" font-family="monospace" fill="rgba(238,234,226,.2)">AGENT: Calling about your account ending</text>
-        <rect x="190" y="14" width="26" height="8" fill="rgba(79,195,247,.15)" style="animation:bp 2s ease-in-out infinite"/>
-        <text x="192" y="20" font-size="6" font-family="monospace" fill="#4fc3f7">4821</text>
-        <text x="14" y="34" font-size="6" font-family="monospace" fill="rgba(238,234,226,.16)">CUSTOMER: I can pay</text>
-        <rect x="108" y="28" width="38" height="8" fill="rgba(0,255,170,.12)" style="animation:bp 2s .4s ease-in-out infinite"/>
-        <text x="110" y="34" font-size="6" font-family="monospace" fill="#00ffaa">₹12,000</text>
-        <text x="150" y="34" font-size="6" font-family="monospace" fill="rgba(238,234,226,.16)">by</text>
-        <rect x="162" y="28" width="34" height="8" fill="rgba(0,255,170,.12)" style="animation:bp 2s .8s ease-in-out infinite"/>
-        <text x="164" y="34" font-size="6" font-family="monospace" fill="#00ffaa">Friday</text>
-        <text x="14" y="48" font-size="6" font-family="monospace" fill="rgba(255,80,80,.75)">AGENT: You must pay today or else...</text>
-        <text x="14" y="62" font-size="6" font-family="monospace" fill="rgba(238,234,226,.08)">CUSTOMER: Okay, I understand...</text>
-        <text x="290" y="40" font-size="5.5" fill="#ff3355" font-family="DM Sans,sans-serif" letter-spacing="1">⚠ COMPLIANCE</text>
-        <text x="290" y="52" font-size="5" fill="rgba(238,234,226,.24)" font-family="DM Sans,sans-serif" letter-spacing="1">CALL FLAGGED</text>
-        <rect x="0" y="0" width="390" height="1.5" fill="rgba(0,255,170,.08)" style="animation:sch 2.6s linear infinite"/>
-      </svg>
-    </div>
-    <div class="plinks"></div>
-  </div>
-
-  <!-- 7: Crop Disease -->
-  <div class="proj-row">
-    <div class="pnum">07</div>
     <div class="proj-info">
       <div class="pname">Crop Disease Detection — FARM-AID</div>
       <div class="proj-desc">AI diagnostic system for Maharashtra and Gujarat crops. 13,000+ images across wheat, rice, maize, sugarcane, potato, and cotton. Ensemble of CNN, ResNet50, MobileNetV2, DenseNet121, EfficientNetB0 achieves 96%+ classification accuracy.</div>
@@ -934,9 +909,9 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     <div class="plinks"><a href="https://github.com/GeekDaksh/Crop-Disease-Detection" target="_blank" class="plink">GitHub →</a></div>
   </div>
 
-  <!-- 8: BCI -->
+  <!-- 7: BCI -->
   <div class="proj-row">
-    <div class="pnum">08</div>
+    <div class="pnum">07</div>
     <div class="proj-info">
       <div class="pname">Adaptive Gameplay Using BCI</div>
       <div class="proj-desc">Motor Imagery EEG classification for Brain-Computer Interfaces. Band-pass filtering isolates Mu/Beta rhythms; CSP + CNN architecture achieves 88.5% accuracy on BCI Competition IV-2a — enabling hands-free device control via imagined movement.</div>
@@ -961,11 +936,41 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
     <div class="plinks"><a href="https://github.com/GeekDaksh/Adaptive-gameplay-using-BCI" target="_blank" class="plink">GitHub →</a></div>
   </div>
 
-  <!-- Earlier work -->
+  <!-- 8: Anxiety EEG -->
+  <div class="proj-row">
+    <div class="pnum">08</div>
+    <div class="proj-info">
+      <div class="pname">Anxiety Classification via EEG</div>
+      <div class="proj-desc">EEG-based anxiety level detection using statistical and frequency features — mean, variance, energy, power spectral density. Random Forest and MLP ensemble classifies Normal vs. Severe Anxiety with high accuracy, demonstrating AI's potential in mental health.</div>
+      <div class="ptags"><span class="ptag">Random Forest</span><span class="ptag">MLP</span><span class="ptag">EEG</span><span class="ptag">Mental Health AI</span></div>
+    </div>
+    <div class="panim">
+      <svg width="100%" height="100%" viewBox="0 0 390 94" preserveAspectRatio="xMidYMid meet" style="position:absolute;">
+        <g transform="translate(136,6)" style="animation:bp 2.8s ease-in-out infinite">
+          <ellipse cx="60" cy="40" rx="50" ry="34" fill="none" stroke="rgba(238,234,226,.08)" stroke-width=".9"/>
+          <path d="M26,20 Q40,12 54,20 Q64,9 78,18 Q94,11 104,24" fill="none" stroke="rgba(238,234,226,.1)" stroke-width=".8"/>
+          <path d="M12,40 Q18,30 26,36 Q20,46 30,52" fill="none" stroke="rgba(238,234,226,.1)" stroke-width=".8"/>
+          <path d="M92,36 Q104,30 114,40 Q108,52 118,56" fill="none" stroke="rgba(238,234,226,.1)" stroke-width=".8"/>
+          <path d="M26,58 Q46,66 76,62 Q96,59 106,54" fill="none" stroke="rgba(238,234,226,.07)" stroke-width=".8"/>
+        </g>
+        <g transform="translate(196,47)">
+          <circle r="4" fill="none" stroke="rgba(255,51,85,.86)" stroke-width="1.3" style="animation:rpo 2.2s ease-out infinite"/>
+          <circle r="4" fill="none" stroke="rgba(255,51,85,.56)" stroke-width=".8" style="animation:rpo 2.2s .55s ease-out infinite"/>
+          <circle r="4" fill="none" stroke="rgba(255,51,85,.3)" stroke-width=".4" style="animation:rpo 2.2s 1.1s ease-out infinite"/>
+          <circle r="2.8" fill="rgba(255,51,85,.82)"/>
+        </g>
+        <text x="14" y="44" font-size="5.5" fill="#ff3355" font-family="DM Sans,sans-serif" letter-spacing="2">GAD · LEVEL 3</text>
+        <text x="14" y="56" font-size="5" fill="rgba(255,51,85,.38)" font-family="DM Sans,sans-serif" letter-spacing="1">RF + MLP ENSEMBLE</text>
+        <text x="318" y="44" font-size="5.5" fill="rgba(238,234,226,.26)" font-family="DM Sans,sans-serif" letter-spacing="1">CLASSIFIED</text>
+      </svg>
+    </div>
+    <div class="plinks"><a href="https://github.com/GeekDaksh/Anxiety-Classification" target="_blank" class="plink">GitHub →</a></div>
+  </div>
+
+<!-- Earlier work -->
   <div class="earlier">
     <div class="earlier-h">Earlier Work</div>
     <a class="ew" href="https://github.com/GeekDaksh/LLM-Hallucination-Identifier" target="_blank"><span class="ew-n">LLM Hallucination Identifier</span><span class="ew-d">Claim-level fact checking with web search + NLI</span><span class="sarr">↗</span></a>
-    <a class="ew" href="https://github.com/GeekDaksh/Anxiety-Classification" target="_blank"><span class="ew-n">Anxiety Classification via EEG</span><span class="ew-d">Random Forest + MLP on EEG spectral features</span><span class="sarr">↗</span></a>
     <a class="ew" href="https://github.com/GeekDaksh/DBT-Dost-SIH" target="_blank"><span class="ew-n">DBT Dost — Smart India Hackathon</span><span class="ew-d">Multilingual scholarship-awareness platform</span><span class="sarr">↗</span></a>
   </div>
 
