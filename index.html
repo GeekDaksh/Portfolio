@@ -284,7 +284,7 @@ body.H #cring{width:54px;height:54px;border-color:rgba(0,255,170,.8);}
 /* each row has a sliding reveal */
 .proj-row{
   border-top:1px solid rgba(255,255,255,.05);
-  display:grid;grid-template-columns:52px 1fr minmax(0,340px) 108px;
+  display:grid;grid-template-columns:52px 1fr minmax(0,340px);
   gap:32px;padding:40px 0;align-items:start;
   position:relative;cursor:none;
   clip-path:inset(0 0 100% 0);
@@ -443,7 +443,7 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
   .about-grid{grid-template-columns:1fr;gap:48px;}
   .skills-header{grid-template-columns:1fr;gap:24px;}
   .sk-grid{grid-template-columns:repeat(2,1fr);}
-  .proj-row{grid-template-columns:40px 1fr minmax(0,260px) 90px;gap:20px;}
+  .proj-row{grid-template-columns:40px 1fr minmax(0,260px);gap:20px;}
   .contact-grid{grid-template-columns:1fr 1fr;gap:48px;}
   footer{padding:20px 32px;}
 }
@@ -555,11 +555,11 @@ footer p{font-size:.5rem;letter-spacing:.18em;color:var(--mute);text-transform:u
 }
 
 .pname-row{display:flex;align-items:baseline;flex-wrap:wrap;column-gap:16px;row-gap:4px;}
-.pname-links{display:inline-flex;gap:12px;flex-wrap:wrap;}
+.pname-links{display:flex;gap:18px;flex-wrap:wrap;align-items:center;margin-top:2px;}
 .pnl{font-size:.55rem;letter-spacing:.2em;text-transform:uppercase;color:var(--g);text-decoration:none;opacity:.6;white-space:nowrap;transition:opacity .2s;}
 .pnl:hover,.pnl:focus-visible{opacity:1;outline:none;}
 /* ── Project "More info" modal ── */
-.pmore{background:none;border:0;padding:0;font-family:inherit;cursor:none;opacity:.55;color:var(--g);}
+.pmore{background:none;border:0;padding:0;font-family:inherit;cursor:none;}
 .pmore:hover,.pmore:focus-visible{opacity:1;outline:none;}
 .pm-ov{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.72);backdrop-filter:blur(6px);display:flex;align-items:flex-start;justify-content:center;padding:6vh 16px;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .3s ease;}
 .pm-ov.open{opacity:1;pointer-events:auto;}
@@ -751,7 +751,8 @@ body.pm-lock{overflow:hidden;}
   <div class="proj-row">
     <div class="pnum">01</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">Cancer Detection &amp; Classification</div><span class="pname-links"><a href="https://ieeexplore.ieee.org/document/11621848/" target="_blank" rel="noopener" class="pnl">Paper ↗</a><a href="https://github.com/GeekDaksh/Cancer-Detection-and-Classification-using-Deep-Learning-and-Genetic-Algorithm" target="_blank" rel="noopener" class="pnl">GitHub ↗</a></span></div>
+      <div class="pname">Cancer Detection &amp; Classification</div>
+      <div class="pname-links"><a href="https://ieeexplore.ieee.org/document/11621848/" target="_blank" rel="noopener" class="pnl">Paper ↗</a><a href="https://github.com/GeekDaksh/Cancer-Detection-and-Classification-using-Deep-Learning-and-Genetic-Algorithm" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><button type="button" class="pnl pmore" data-p="cancer" aria-haspopup="dialog">More info +</button></div>
       <div class="cbadge">★ IEEE ICBCB 2026 — Published · Presented</div>
       <div class="proj-desc">Pan-cancer classification across 33 cancer types using 10,459 patient samples. Genetic Algorithms prune 200,000+ features; TabNet and SAINT attention models achieve 98.76% binary and 95.60% multiclass accuracy with gradient-based biomarker identification.</div>
       <div class="ptags"><span class="ptag">Attention</span><span class="ptag">Deep Learning</span><span class="ptag">Genetic Algorithm</span><span class="ptag">ML</span><span class="ptag">Jupyter</span></div>
@@ -780,14 +781,14 @@ body.pm-lock{overflow:hidden;}
         <text x="328" y="46" font-size="5.5" fill="rgba(238,234,226,.28)" font-family="DM Sans,sans-serif">94.7%</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="cancer" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 2: BMS -->
   <div class="proj-row">
     <div class="pnum">02</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">Uncertainty-Aware Multi-Agent Battery Charging</div><span class="pname-links"><a href="https://github.com/GeekDaksh/Battery-Management-System" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><a href="https://battery-management-system-1-mc2b.onrender.com/" target="_blank" rel="noopener" class="pnl">Demo ↗</a></span></div>
+      <div class="pname">Uncertainty-Aware Multi-Agent Battery Charging</div>
+      <div class="pname-links"><a href="https://github.com/GeekDaksh/Battery-Management-System" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><a href="https://battery-management-system-1-mc2b.onrender.com/" target="_blank" rel="noopener" class="pnl">Demo ↗</a><button type="button" class="pnl pmore" data-p="bms" aria-haspopup="dialog">More info +</button></div>
       <div class="cbadge">★ INDICON 2026 — Accepted Paper</div>
       <div class="proj-desc">Five-agent uncertainty-aware pipeline for adaptive Li-ion charging. Transformer-based predictor, ECM + NSGA-II optimiser, meta-agent policy selection, and a kill-switch safety gate. Reduces SoH loss by up to 9% vs. CC-CV — live demo deployed.</div>
       <div class="ptags"><span class="ptag">Multi-Head Attention</span><span class="ptag">AI Agents</span><span class="ptag">NSGA-II</span><span class="ptag">Optimisation</span><span class="ptag">Python</span></div>
@@ -814,7 +815,6 @@ body.pm-lock{overflow:hidden;}
         <text x="312" y="46" font-size="5.5" fill="rgba(0,255,170,.26)" font-family="DM Sans,sans-serif" letter-spacing="1">ATTN WEIGHTS</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="bms" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 3: SDL -->
@@ -822,6 +822,7 @@ body.pm-lock{overflow:hidden;}
     <div class="pnum">03</div>
     <div class="proj-info">
       <div class="pname">Self-Driving Lab for Concrete Mix Design</div>
+      <div class="pname-links"><button type="button" class="pnl pmore" data-p="sdl" aria-haspopup="dialog">More info +</button></div>
       <div class="cbadge nb">◆ Final-Year Capstone · Completed</div>
       <div class="proj-desc">An AI lab assistant that designs IS-code-compliant concrete mixes (M10–M65) using manufactured sand. A tested IS 10262 engine does every calculation; LightGBM and a Gaussian Process predict strength and workability with uncertainty; a qNEHVI Bayesian optimiser ranks mixes on strength, workability and cost. Durability is a hard gate, and every number traces back to an IS clause.</div>
       <div class="ptags"><span class="ptag">Bayesian Optimisation</span><span class="ptag">BoTorch / Ax</span><span class="ptag">LightGBM</span><span class="ptag">Gaussian Process</span><span class="ptag">IS 10262</span></div>
@@ -852,14 +853,14 @@ body.pm-lock{overflow:hidden;}
         <text x="312" y="58" font-size="5" fill="rgba(238,234,226,.22)" font-family="DM Sans,sans-serif" letter-spacing="1">3 TRIALS</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="sdl" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 4: ARCS -->
   <div class="proj-row">
     <div class="pnum">04</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">ARCS — Ballistics Fire-Control Simulation</div><span class="pname-links"><a href="https://github.com/GeekDaksh/ARCS---The-Final" target="_blank" rel="noopener" class="pnl">GitHub ↗</a></span></div>
+      <div class="pname">ARCS — Ballistics Fire-Control Simulation</div>
+      <div class="pname-links"><a href="https://github.com/GeekDaksh/ARCS---The-Final" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><button type="button" class="pnl pmore" data-p="arcs" aria-haspopup="dialog">More info +</button></div>
       <div class="cbadge nb">◆ Industrial Training · L&amp;T Precision Engineering &amp; Systems</div>
       <div class="proj-desc">Trajectory simulation for a fire-control system using the STANAG 4355 Modified Point Mass model with RK4 integration. Kalman-filter estimation and a Newton / Gauss-Newton correction step tune the solution, with a 3D trajectory visualiser to inspect each shot.</div>
       <div class="ptags"><span class="ptag">STANAG 4355</span><span class="ptag">RK4</span><span class="ptag">Kalman Filter</span><span class="ptag">Gauss-Newton</span><span class="ptag">Python</span></div>
@@ -879,7 +880,6 @@ body.pm-lock{overflow:hidden;}
         <text x="300" y="18" font-size="5" fill="rgba(238,234,226,.24)" font-family="DM Sans,sans-serif" letter-spacing="1">TRAJECTORY</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="arcs" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 5: MediaLens -->
@@ -887,6 +887,7 @@ body.pm-lock{overflow:hidden;}
     <div class="pnum">05</div>
     <div class="proj-info">
       <div class="pname">MediaLens — Multimodal Media AI</div>
+      <div class="pname-links"><button type="button" class="pnl pmore" data-p="medialens" aria-haspopup="dialog">More info +</button></div>
       <div class="proj-desc">Three tools for video and TV content. Emotion-aware scene search finds moments by what is said and how it feels (MELD). SafeCut detects slurs and profanity in clips and bleeps, blurs or cuts them for clean highlights. A cost-aware multimodal sarcasm detector combines text, audio and video only when needed (MUStARD).</div>
       <div class="ptags"><span class="ptag">Multimodal</span><span class="ptag">Speech</span><span class="ptag">Video</span><span class="ptag">NLP</span><span class="ptag">Content Moderation</span></div>
     </div>
@@ -909,14 +910,14 @@ body.pm-lock{overflow:hidden;}
         <rect x="0" y="0" width="1.5" height="94" fill="rgba(0,255,170,.25)" style="animation:sweep 4s linear infinite"/>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="medialens" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 6: Crop Disease -->
   <div class="proj-row">
     <div class="pnum">06</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">Crop Disease Detection — FARM-AID</div><span class="pname-links"><a href="https://github.com/GeekDaksh/Crop-Disease-Detection" target="_blank" rel="noopener" class="pnl">GitHub ↗</a></span></div>
+      <div class="pname">Crop Disease Detection — FARM-AID</div>
+      <div class="pname-links"><a href="https://github.com/GeekDaksh/Crop-Disease-Detection" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><button type="button" class="pnl pmore" data-p="farmaid" aria-haspopup="dialog">More info +</button></div>
       <div class="proj-desc">AI diagnostic system for Maharashtra and Gujarat crops. 13,000+ images across wheat, rice, maize, sugarcane, potato, and cotton. Ensemble of CNN, ResNet50, MobileNetV2, DenseNet121, EfficientNetB0 achieves 96%+ classification accuracy.</div>
       <div class="ptags"><span class="ptag">CNN</span><span class="ptag">Image Processing</span><span class="ptag">Computer Vision</span><span class="ptag">Jupyter</span></div>
     </div>
@@ -941,14 +942,14 @@ body.pm-lock{overflow:hidden;}
         <rect x="0" y="0" width="390" height="1" fill="rgba(0,255,170,.07)" style="animation:sch 3.2s linear infinite"/>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="farmaid" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 7: BCI -->
   <div class="proj-row">
     <div class="pnum">07</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">Adaptive Gameplay Using BCI</div><span class="pname-links"><a href="https://github.com/GeekDaksh/Adaptive-gameplay-using-BCI" target="_blank" rel="noopener" class="pnl">GitHub ↗</a></span></div>
+      <div class="pname">Adaptive Gameplay Using BCI</div>
+      <div class="pname-links"><a href="https://github.com/GeekDaksh/Adaptive-gameplay-using-BCI" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><button type="button" class="pnl pmore" data-p="bci" aria-haspopup="dialog">More info +</button></div>
       <div class="proj-desc">Motor Imagery EEG classification for Brain-Computer Interfaces. Band-pass filtering isolates Mu/Beta rhythms; CSP + CNN architecture achieves 88.5% accuracy on BCI Competition IV-2a — enabling hands-free device control via imagined movement.</div>
       <div class="ptags"><span class="ptag">EEG</span><span class="ptag">BCI</span><span class="ptag">Transformers</span><span class="ptag">RL</span><span class="ptag">Signal Processing</span></div>
     </div>
@@ -968,14 +969,14 @@ body.pm-lock{overflow:hidden;}
         <text x="286" y="70" font-size="5" fill="rgba(0,255,170,.32)" font-family="DM Sans,sans-serif" letter-spacing="1">WORKLOAD: 78%</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="bci" aria-haspopup="dialog">More info +</button></div>
   </div>
 
   <!-- 8: Anxiety EEG -->
   <div class="proj-row">
     <div class="pnum">08</div>
     <div class="proj-info">
-      <div class="pname-row"><div class="pname">Anxiety Classification via EEG</div><span class="pname-links"><a href="https://github.com/GeekDaksh/Anxiety-Classification" target="_blank" rel="noopener" class="pnl">GitHub ↗</a></span></div>
+      <div class="pname">Anxiety Classification via EEG</div>
+      <div class="pname-links"><a href="https://github.com/GeekDaksh/Anxiety-Classification" target="_blank" rel="noopener" class="pnl">GitHub ↗</a><button type="button" class="pnl pmore" data-p="anxiety" aria-haspopup="dialog">More info +</button></div>
       <div class="proj-desc">EEG-based anxiety level detection using statistical and frequency features — mean, variance, energy, power spectral density. Random Forest and MLP ensemble classifies Normal vs. Severe Anxiety with high accuracy, demonstrating AI's potential in mental health.</div>
       <div class="ptags"><span class="ptag">Random Forest</span><span class="ptag">MLP</span><span class="ptag">EEG</span><span class="ptag">Mental Health AI</span></div>
     </div>
@@ -999,7 +1000,6 @@ body.pm-lock{overflow:hidden;}
         <text x="318" y="44" font-size="5.5" fill="rgba(238,234,226,.26)" font-family="DM Sans,sans-serif" letter-spacing="1">CLASSIFIED</text>
       </svg>
     </div>
-    <div class="plinks"><button type="button" class="plink pmore" data-p="anxiety" aria-haspopup="dialog">More info +</button></div>
   </div>
 
 <!-- Earlier work -->
